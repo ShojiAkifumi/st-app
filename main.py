@@ -10,7 +10,7 @@ def file_save(image, file_path):
 image = st.file_uploader("ファイルアップロード", type='jpg')
 
 if image is not None:
-    file_path = f'img/{image.name}'
+    file_path = image.name
     
     file_save(image, file_path)
     
