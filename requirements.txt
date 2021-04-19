@@ -1,6 +1,2 @@
 streamlit
-<<<<<<< HEAD
 opencv-python-headless
-=======
-opencv-python-headless
->>>>>>> 4e9e3faf09a56a9cc096f4b1bcfada38b806cc57
