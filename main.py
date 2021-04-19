@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import cv2
+import os
 
 def file_save(image, file_path):
     image = Image.open(image)
@@ -28,3 +29,5 @@ if image is not None:
         st.write("顔が認識されませんでした。")
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     st.image(image)
+    
+    os.remove(file_path)
